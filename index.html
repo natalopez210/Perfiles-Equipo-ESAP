@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo de Trabajo</title>
+
+  <style>
+
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f6f9;
+      margin:0;
+      padding:40px;
+    }
+
+    h1{
+      text-align:center;
+      color:#1e293b;
+      margin-bottom:40px;
+    }
+
+    .contenedor{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .card{
+      background:white;
+      border-radius:18px;
+      padding:25px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .foto{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:15px;
+      border:4px solid #dbeafe;
+    }
+
+    .nombre{
+      font-size:22px;
+      font-weight:bold;
+      color:#0f172a;
+    }
+
+    .cargo{
+      color:#2563eb;
+      margin:10px 0;
+      font-weight:600;
+    }
+
+    .descripcion{
+      color:#475569;
+      font-size:15px;
+      line-height:1.5;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<h1>Equipo de Trabajo</h1>
+
+<div class="contenedor">
+
+  <div class="card">
+    <img class="foto" src="https://i.pravatar.cc/300?img=1">
+    <div class="nombre">Natalia López</div>
+    <div class="cargo">Gestora de Proyectos</div>
+    <div class="descripcion">
+      Especialista en gestión y planificación territorial.
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="foto" src="https://i.pravatar.cc/300?img=2">
+    <div class="nombre">David Mahecha</div>
+    <div class="cargo">Coordinador Técnico</div>
+    <div class="descripcion">
+      Experiencia en seguimiento operativo y control de procesos.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
