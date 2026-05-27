@@ -53,8 +53,9 @@
     }
 
     .contenedor{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
       gap:25px;
       max-width:1300px;
       margin:auto;
@@ -68,6 +69,7 @@
       text-align:center;
       transition:0.3s;
       border:1px solid #dbe4ee;
+      width:280px;
     }
 
     .card:hover{
